@@ -13,6 +13,7 @@ BUILD_DIR=$1
 CACHE_DIR=$2
 ENV_DIR=$3
 
+echo ls $BUILD_DIR
 echo $BUILD_DIR
 echo $CACHE_DIR
 echo $ENV_DIR
@@ -27,8 +28,8 @@ echo $PATH
 
 # copy the buildpack to the right place
 mkdir -p $BUILD_DIR/bin
-cp $BIN_DIR/../rsvg/* $BUILD_DIR/usr/bin
-ls $BUILD_DIR/usr/bin/
+cp $BIN_DIR/../rsvg/* $BUILD_DIR/bin
+ls $BUILD_DIR/bin/
 
 which rsvg-convert
 
