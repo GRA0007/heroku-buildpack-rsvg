@@ -27,8 +27,8 @@ echo $PATH
 
 # copy the buildpack to the right place
 mkdir -p $BUILD_DIR/bin
-cp $BIN_DIR/../rsvg/* /usr/bin
-ls /usr/bin
+cp $BIN_DIR/../rsvg/* $BUILD_DIR/usr/bin
+ls $BUILD_DIR/usr/bin/
 
 which rsvg-convert
 
