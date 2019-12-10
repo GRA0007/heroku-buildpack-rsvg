@@ -26,7 +26,9 @@ echo $ENV_DIR
 mkdir -p $BUILD_DIR/bin
 cp $BIN_DIR/../rsvg/* $BUILD_DIR/bin
 
+ 
 PROFILE_PATH="$BUILD_DIR/.profile.d/rsvg-convert.sh"
+touch PROFILE_PATH
 echo "export PATH=$HOME/bin:$PATH" >> $PROFILE_PATH
 echo $PATH
 
