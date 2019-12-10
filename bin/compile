@@ -26,7 +26,7 @@ echo $ENV_DIR
 mkdir -p $BUILD_DIR/bin
 cp $BIN_DIR/../rsvg/* $BUILD_DIR/bin
 
-export PATH="$HOME/bin":$PATH
+export PATH=$HOME/bin:$PATH
 echo $PATH
 
 exit 0
