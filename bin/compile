@@ -23,13 +23,13 @@ echo $ENV_DIR
 #echo "$BUILD_DIR/rsvg" >> $ENV_DIR/BIN_PATH
 #echo "$BUILD_DIR/rsvg" >> $ENV_DIR/LD_LIBRARY_PATH
 
-export PATH="$BUILD_DIR/bin":$PATH
-echo $PATH
-
 # copy the buildpack to the right place
 mkdir -p $BUILD_DIR/bin
 cp $BIN_DIR/../rsvg/* $BUILD_DIR/bin
 ls $BUILD_DIR/bin/
+
+export PATH="$HOME/bin":$PATH
+echo $PATH
 
 which rsvg-convert
 
