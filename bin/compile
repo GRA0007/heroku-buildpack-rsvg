@@ -26,24 +26,8 @@ echo $ENV_DIR
 # copy the buildpack to the right place
 mkdir -p $BUILD_DIR/bin
 cp $BIN_DIR/../rsvg/* $BUILD_DIR/bin
-ls $BUILD_DIR/bin/
 
 export PATH="$HOME/bin":$PATH
 echo $PATH
-
-which rsvg-convert
-
-# Check for an essential binary to make sure it's installed
-if [ ! `which rsvg-convert` ]; then
-    build-warn "rsvg-convert installation failed"
-    exit 1
-fi
-
-set +e  # disable error checking
-
-# run testing build
-build-step "Now - running the testing build\n\n\n"
-
-rsvg-convert --version
 
 exit 0
