@@ -27,7 +27,7 @@ mkdir -p $BUILD_DIR/bin
 cp $BIN_DIR/../rsvg/* $BUILD_DIR/bin
 
 mkdir -p $BUILD_DIR/.profile.d
-echo "export PATH=\$HOME/bin:\$PATH" > $BUILD_DIR/.profile.d/rsvg-convert.sh
+export PATH=\$HOME/bin:\$PATH
 
 echo $PATH
 
